@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+        <title> WDD 131 - Dynamic Web Fundamentals - Miamo Siedjouwa </title>
+        <meta name="description" content="Miamo siedjouwa vinick C., WDD 131 - Dynamic Web Fundamentals,">
+        <meta name="author" content="Miamo siedjouwa vinick">
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head">
+        <img src="images/profile.jpg" alt="Miamo Siedjouwa Vinick" width="200">
+        <h1>Miamo Siedjouwa Vinick C.</h1>
+    </div>
+        <nav>
+            <button class="hamburger">☰</button>
+            <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">Chamber</a>
+            <a href="https://github.com/vinickchristian">GitHub Profile</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+        <section class="info-section">
+            <div id="course-work" class="info-box">
+                <h2>Course work</h2>
+                <ul id="course-work-list"></ul>
+            </div>
+            </section>
+    
+        <section class="Location">
+            <h2>Douala, Cameroon</h2>
+            <figure>
+                <img src="images/bangos.webp" alt="Wildlife safari">
+                <figcaption>National park</figcaption>
+            </figure>
+        </div>
+        </section>
+         <section class="certificate-section">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filter-buttons">
+        <button onclick="filterCourses('all')">All</button>
+        <button onclick="filterCourses('CSE')">CSE</button>
+        <button onclick="filterCourses('WDD')">WDD</button>
+      </div>
+      <div id="course-grid" class="course-grid"></div>
+      
+    </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>🎋Miamo Siedjouwa Vinick Christian 🎋 Cameroon</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

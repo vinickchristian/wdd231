@@ -36,7 +36,7 @@ async function fetchMemberData() {
         memberSection.classList.add('member-card'); // Optional: Keep the same class name
         memberSection.innerHTML = `
             <img src="images/${member.image}" alt="${member.name} Logo">
-            <h4>${member.name}</h4>
+            <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank">website</a>

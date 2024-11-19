@@ -51,7 +51,6 @@ h2 {
 .menu a {
     color: white;
     text-decoration: none;
-    align-items:right;
 }
 .container img {
         width: 100px;
@@ -117,7 +116,7 @@ h3 {
 }
 .grid h4 {
     font-family: "Caveat", cursive;
-    color: rgb(141, 57, 57);
+    color: rgba(196, 10, 10, 0.719);
 }
 
 .member-card {

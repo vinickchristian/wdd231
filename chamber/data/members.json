@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Alpha Boutique",
+        "address": "123 Market St, Timbuktu, Mali",
+        "phone": "(223) 555-1111",
+        "website": "https://alphaboutique.com",
+        "image": "alpha-boutique.png",
+        "membershipLevel": 1,
+        "description": "A charming boutique offering local artisan goods and clothing."
+    },
+    {
+        "name": "Beta Tech Solutions",
+        "address": "456 Innovation Way, Timbuktu, Mali",
+        "phone": "(223) 555-2222",
+        "website": "https://betatech.com",
+        "image": "beta-tech.png",
+        "membershipLevel": 2,
+        "description": "Your trusted partner for IT and tech solutions."
+    },
+    {
+        "name": "Gamma Cafe",
+        "address": "789 Coffee Ln, Timbuktu, Mali",
+        "phone": "(223) 555-3333",
+        "website": "https://gammacafe.com",
+        "image": "gamma-cafe.png",
+        "membershipLevel": 3,
+        "description": "The best coffee and pastries in town."
+    },
+    {
+        "name": "Delta Fitness",
+        "address": "321 Wellness Blvd, Timbuktu, Mali",
+        "phone": "(223) 555-4444",
+        "website": "https://deltafitness.com",
+        "image": "delta-fitness.png",
+        "membershipLevel": 1,
+        "description": "Stay fit with our state-of-the-art facilities."
+    },
+    {
+        "name": "Epsilon Books",
+        "address": "654 Knowledge Ave, Timbuktu, Mali",
+        "phone": "(223) 555-5555",
+        "website": "https://epsilonbooks.com",
+        "image": "epsilon-books.png",
+        "membershipLevel": 2,
+        "description": "A wide selection of books for every reader."
+    },
+    {
+        "name": "Zeta Landscaping",
+        "address": "987 Green St, Timbuktu, Mali",
+        "phone": "(223) 555-6666",
+        "website": "https://zetalandscaping.com",
+        "image": "zeta-landscaping.png",
+        "membershipLevel": 3,
+        "description": "Transforming outdoor spaces into beautiful landscapes."
+    },
+    {
+        "name": "Eta Art Gallery",
+        "address": "135 Creative Pl, Timbuktu, Mali",
+        "phone": "(223) 555-7777",
+        "website": "https://etaartgallery.com",
+        "image": "eta-gallery.png",
+        "membershipLevel": 2,
+        "description": "Showcasing local art and talent."
+    }
+]

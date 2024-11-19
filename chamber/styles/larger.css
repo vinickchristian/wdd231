@@ -1,0 +1,16 @@
+@media (min-width: 740px) {
+    nav a:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+    
+        nav .hamburger {
+            display: none;
+        }
+    
+       
+    
+        nav .menu a {
+            margin: 0 1em;
+        }
+    }  

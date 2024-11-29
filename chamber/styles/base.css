@@ -1,45 +1,69 @@
 :root {
-    --blue: rgb(40, 111, 165);
-    --blue-1: rgb(29, 77, 114, 0.1);
-    --blue-7: rgba(16, 33, 46, 0.7);
-    --blue-9: rgb(29, 77, 114, 0.9);
-    --brown: rgb(100, 50, 0, 1);
-    --yellow: rgb(255, 255, 0, 1);
-    --bord: 1px solid rgb(0, 0, 0, 0.1)
+    --primary-color: #49C8F3;
+    --secondary-color: #05668D;
+    --accent-color: #F4D35E;
+    --neutral-light-color: #F6F7EB;
+    --neutral-dark-color: #2C2C2C;
+    --highlight-color: #EE964B;
 }
 
 * {
     padding: 0;
     margin: 0;
 }
+header,
+footer {
+    background-color: var(--neutral-dark-color);
+    width: 100%;
+    color: aliceblue;
+}
 
 header {
-    background-color: var(--blue);
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.header-top {
     display: flex;
+    background-color: var(--neutral-dark-color);
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.ComName {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    gap: 10px;
 }
 
-.heading {
-    margin: 20px;
-    margin-left: 1rem;
-    text-align: center;
-    width: auto;
-}
 
-header img {
-    width: auto;
-    margin-right: 1rem;
-    border-radius: 30%;
+.header-top-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-right: 20px;
+    gap: 10px;
+    align-items: center;
 }
 
 h1 {
-    color: #fff;
-    font-family: v
+    font-size: 60px;
+}
+
+h1 {
+
+    margin: 0px;
 }
 
 h2 {
-    color: #f3f0f0;
+    
     font-size: small;
     font-family: PT Sans;
 }
@@ -104,7 +128,7 @@ nav {
 }
 
 h3 {
-    color: navy;
+    color: var(--secondary-color);
     margin-left: 2rem;
 }
 
@@ -226,14 +250,10 @@ header .hamburger {
 }
 
 
-
-
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--blue);
     color: #fff;
-    margin-top: 2rem;
 }
 
 footer a {
@@ -263,23 +283,28 @@ footer a {
 
 /* Responsive Styling */
 @media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr 3fr 1fr;
+    .header-top-left img {
+        width: 49px;
+        height: auto;
     }
 
-    header {
-        flex-direction: row;
-        text-align: center;
-        display: flex;
-    }
-
-    header {
-        display: flex;
+    .header-top-right {
+        align-items: center;
     }
 
     header .hamburger {
         display: block;
+        color: #fff;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
     }
+    
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
 
     .menu {
         display: none;

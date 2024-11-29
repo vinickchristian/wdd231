@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=" https://ogp.me/ns/index.com">
+    <meta property="og:image" content="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/tcc_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src=" scripts/displayWeather.js" defer> </script>
+
+    <title>Timbuktu Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+          <div class="header-top-left">  
+        <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="100" height="100">
+        <div class="ComName">
+        <h1>Timbuktu </h1>
+        <p>Chamber of Commerce<p>
+        </div>
+    </div>
+
+   <div class="header-top-right">
+    <nav>
+        <button class="hamburger">&#9776;</button>
+        <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Join</a>
+        <!-- <a href="about.html">About</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="events.html">Events</a> -->
+    </div>
+    </nav>
+    </div>
+</div>
+    <section class="hero">
+        <picture>
+            <source media="(min-width: 700px)"srcset="images/hero-large.webp" >
+            <img src="images/hero-small.webp" alt="Douala city" width="640" height="480">
+          </picture>
+          <div class="hero-ovarlay">
+        <a href="join.html" class="cta-button">Join Today</a>
+    </div>
+    </section>
+
+</header>
+    <main>
+        <h2>Home</h2>
+        <div class="weatherInfo">
+        <div class="events">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </div>
+
+        <section>
+            <h3> Current Weather</h3> 
+            <div class="weather-curent-parts">
+            
+                <img id="weather-icon" src="" alt="" width="50" height="50">
+              <div class="weather-details">
+              <p> <span id="temprature"></span></p>
+              <!-- <p><span id="town"> </span></p> -->
+              <p><span id="description"></span></p>
+              <p>High:<span id="temp-max"></span></p>
+              <p>Low:<span id="temp-min"></span></p>
+              <p>Humidity:<span id="humidity"></span></p>
+              <p>Sunrise:<span id="sunrise"></span></p>
+              <p>Sunset:<span id="sunset"></span></p>
+            <!-- Content will be dynamically loaded -->
+        </div>
+        </div>
+        </section>
+
+
+        <div class="weather-forecast">
+            <h3>Weather Forecast</h3>
+            <p>Today: <b><span id="forecast-today"></span></b></p>
+            <p>Tomorrow: <b><span id="forecast-tomorrow"></span></b></p>
+            <p>The Next Day: <b><span id="forecast-next"></span></b></p>
+        </div>
+    </div>
+
+        
+            <div class="spotlight-container" id="spotlight-container"></div>
+        
+        
+    
+    </main>
+    <footer class="contact">
+        <p>Contact us: 10 Rue De La Paix, Timbuktu, Mali 999 | Email: info@timbuktucc.org | Phone: (223) 555-2300</p>
+            <nav class="sociallinks">
+                <a href="https://www.youtube.com/">
+                  <img src="images/youtube.svg" alt="youtube">
+                </a>
+                <a href="https://www.linkedin.com/in/vinick-christian-miamo-siedjouwa-04757a1b9/">
+                  <img src="images/twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/vinick-christian-miamo-siedjouwa-04757a1b9/">
+                    <img src="images/linkedin.svg" alt="linkedin">
+              </a>
+              </nav>
+        
+        <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce / 
+            <span id="lastModified"></span> </p>
+        
+    </footer>
+</body>
+
+</html>

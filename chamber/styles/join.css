@@ -1,0 +1,379 @@
+:root {
+    --primary-color: #49C8F3;
+    --secondary-color: #05668D;
+    --accent-color: #F4D35E;
+    --neutral-light-color: #F6F7EB;
+    --neutral-dark-color: #2C2C2C;
+    --highlight-color: #EE964B;
+}
+
+body {
+    margin: auto;
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', 'Montserrat', sans-serif;
+    background-color: var(--neutral-light-color);
+    max-width: 1000px;
+}
+
+
+.animate-me {
+    display: none;
+}
+
+
+.join-button:hover {
+    background-color: var(--neutral-dark-color);
+    color: var(--neutral-light-color);
+}
+
+
+.join-form {
+    border: 1px solid var(--neutral-dark-color);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    min-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.join-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.join-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.join-form input {
+    margin-bottom: 15px;
+}
+
+.join-form select {
+    margin-bottom: 15px;
+}
+
+.join-form textarea {
+    margin-bottom: 15px;
+}
+
+#submit-button {
+    padding: 10px;
+    margin: 0 auto;
+    background-color: var(--accent-color);
+}
+
+.join-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.membership-cards {
+    text-align: center;
+}
+
+.membership-card {
+    border: 1px solid var(--neutral-dark-color);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--highlight-color);
+    color: var(--neutral-dark-color);
+}
+
+#non-profit {
+    animation: fadeInBounce-non-profit 2s ease-out;
+}
+
+#bronze {
+    animation: fadeInBounce-bronze 2s ease-out;
+}
+
+#silver {
+    animation: fadeInBounce-silver 2s ease-out;
+}
+
+#gold {
+    animation: fadeInBounce-gold 2s ease-out;
+}
+
+.membership-card button {
+    padding: 10px;
+}
+
+.thank-you-content {
+    max-width: 800px;
+}
+
+.thank-you-content h2 {
+    text-align: center;
+}
+
+.form-data {
+    border: 1px solid var(--neutral-dark-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.discover-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.discover-content .left-side-bar {
+    text-align: center;
+}
+
+.left-card {
+    border: 1px solid var(--neutral-dark-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    max-width: 300px;
+    margin: 0 auto;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.left-card p {
+    text-align: left;
+    padding: 10px;
+}
+
+.left-card img {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.discover-events p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.discover-content .main-content {
+    text-align: center;
+}
+
+.main-content .discover-image {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 0px;
+}
+
+.discover-image img {
+    border-radius: 10px;
+}
+
+.discover-image img:hover {
+    border: 3px solid var(--neutral-dark-color);
+    margin: -3px;
+}
+
+.small-form-factor {
+    display: none;
+}
+
+#welcome-message {
+    text-align: center;
+}
+
+@keyframes fadeInBounce-non-profit {
+    0% {
+        opacity: 1;
+        transform: translateX(50px); 
+    }
+    50% {
+        opacity: .4;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+@keyframes fadeInBounce-bronze {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+    60% {
+        opacity: .8;
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+@keyframes fadeInBounce-silver {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+    70% {
+        opacity: .9;
+        transform: translateX(-10px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+@keyframes fadeInBounce-gold {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+    80% {
+        opacity: .9;
+        transform: translateX(-10px); 
+    }
+    100% {
+        opacity: 2;
+        transform: translateX(0);
+    }
+}
+
+dialog {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+}
+
+dialog[open] {
+    display: block;
+}
+
+.modal-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.modal-footer button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-footer button.close {
+    background-color: #f44336;
+    color: white;
+}
+
+button.open-modal {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #14c014;
+    color: white;
+    cursor: pointer;
+}
+
+button.open-modal:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 699px) {
+    main {
+        margin: 0;
+        max-width: 100%;
+    }
+
+   
+    .dark-light-toggle {
+        padding: 0px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        display: block;
+        text-align: center;
+        border: none;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+
+    .join-form {
+        min-width: 200px;
+    }
+
+    .join-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .join-form textarea {
+        max-width: 250px;
+    }
+
+    .join-content {
+        grid-template-columns: 1fr;
+    }
+
+    .discover-content {
+        grid-template-columns: 1fr;
+    }
+
+    .large-form-factor {
+        display: none;
+    }
+
+    .discover-image img:hover {
+        border: none;
+    }
+
+    .small-form-factor {
+        display: block;
+    }
+}

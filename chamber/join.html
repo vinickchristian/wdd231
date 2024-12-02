@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Miamo Siedjouwa Vinick">
+    <meta name="description" content="Timbuku Chamber of Commerce">
+    <meta property="og:url" content=" https://vinickchristian.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image:at" content="Douala city ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/tcc_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src=" scripts/displayWeather.js" defer> </script>
+    <script src="scripts/displayModel.js" defer> </script>
+
+    <title>Timbuktu Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="100" height="100">
+                <div class="ComName">
+                    <h1>Timbuktu </h1>
+                    <p>Chamber of Commerce
+                    <p>
+                </div>
+            </div>
+
+            <div class="header-top-right">
+                <nav>
+                    <button class="hamburger">&#9776;</button>
+                    <div class="menu">
+                        <a href="index.html">Home</a>
+                        <a href="directory.html">Directory</a>
+                        <a href="discover.html">Discover</a>
+                        <a href="join.html">Join</a>
+                        <!-- <a href="about.html">About</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="events.html">Events</a> -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <h2>Join</h2>
+        <div class="join-content">
+            <div>
+                <h3>Membership Application Form</h3>
+                <div class="join-form">
+                    <form method="get" action="thankyou.html">
+
+                        <div class="join-form-grid">
+                            <div>
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name" name="firstName" title="Enter your first name"
+                                    autocomplete="given-name" required>
+                            </div>
+
+                            <div>
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name" name="lastName" title="Enter your last name"
+                                    autocomplete="family-name" required>
+                            </div>
+
+                            <div>
+                                <label for="organization-title">Organizational Title:</label>
+                                <input type="text" id="organization-title" name="organizationTitle"
+                                    title="Enter your organizational title (letters, hyphens, and spaces only, min 7 characters)"
+                                    autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" required>
+                            </div>
+
+                            <div>
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" title="Enter your email address"
+                                    autocomplete="email" placeholder="example@email.com" required>
+                            </div>
+
+                            <div>
+                                <label for="phone">Mobile Phone:</label>
+                                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+                                    autocomplete="tel" required>
+                            </div>
+
+                            <div>
+                                <label for="organization-name">Organization Name:</label>
+                                <input type="text" id="organization-name" name="organizationName"
+                                    title="Enter the name of your business/organization" autocomplete="organization"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="membership-level">Membership Level:</label>
+                                <select id="membership-level" name="membershipLevel" title="Select a membership level"
+                                    required>
+                                    <option value="" disabled selected hidden>Choose one</option>
+                                    <option value="non-profit">Non-Profit (Free)</option>
+                                    <option value="bronze">Bronze</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gold">Gold</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="description">Business/Organization Description:</label>
+                            <textarea id="description" name="organizationDescription"
+                                title="Describe your business/organization" rows="5" cols="40"></textarea>
+                        </div>
+
+                        <input type="hidden" name="timestamp" id="timestamp" value="">
+
+                        <input type="submit" value="Submit Application" id="submit-button">
+                    </form>
+                </div>
+            </div>
+            <div class="membership-cards">
+                <h3>Membership Levels</h3>
+                <div class="membership-card" id="non-profit">
+                    <p>Non-Profit Membership</p>
+                    <button class="non-profit-modal-open">Learn More</button>
+                </div>
+                <div class="membership-card" id="bronze">
+                    <p>Bronze Membership</p>
+                    <button class="bronze-modal-open">Learn More</button>
+                </div>
+                <div class="membership-card" id="silver">
+                    <p>Silver Membership</p>
+                    <button class="silver-modal-open">Learn More</button>
+                </div>
+                <div class="membership-card" id="gold">
+                    <p>Gold Membership</p>
+                    <button class="gold-modal-open">Learn More</button>
+                </div>
+            </div>
+
+            <dialog id="non-profit-modal">
+                <div class="modal-header">Non-Profit Membership</div>
+                <div class="modal-body">
+                    <p>Designed exclusively for non-profit organizations, this membership provides:</p>
+                    <ul>
+                        <li><strong>Community Connections</strong>: Networking opportunities to collaborate with local
+                            businesses and other non-profits.</li>
+                        <li><strong>Basic Directory Listing</strong>: Inclusion in the Chamber’s online business
+                            directory to enhance visibility.</li>
+                        <li><strong>Event Invitations</strong>: Access to Chamber events at discounted rates to promote
+                            your mission.</li>
+                        <li><strong>Recognition</strong>: Highlighted as a valued non-profit partner in our community
+                            outreach.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="non-profit-modal-close">Close</button>
+                </div>
+            </dialog>
+
+            <dialog id="bronze-modal">
+                <div class="modal-header">Bronze Membership</div>
+                <div class="modal-body">
+                    <p>Perfect for small businesses looking to grow and connect, the Bronze level offers:</p>
+                    <ul>
+                        <li><strong>Directory Listing</strong>: Priority placement in the Chamber’s business directory.
+                        </li>
+                        <li><strong>Networking Events</strong>: Invitations to Chamber mixers and events to expand your
+                            professional network.</li>
+                        <li><strong>Social Media Shoutouts</strong>: One promotional post on the Chamber’s social media
+                            platforms annually.</li>
+                        <li><strong>Educational Resources</strong>: Access to webinars and workshops focused on small
+                            business growth.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="bronze-modal-close">Close</button>
+                </div>
+            </dialog>
+
+            <dialog id="silver-modal">
+                <div class="modal-header">Silver Memberhsip</div>
+                <div class="modal-body">
+                    <p>Ideal for businesses seeking elevated exposure and engagement, the Silver level includes:</p>
+                    <ul>
+                        <li><strong>Enhanced Directory Listing</strong>: Featured placement with a business logo and
+                            detailed profile in the Chamber directory.</li>
+                        <li><strong>Event Discounts</strong>: Reduced pricing for booth space at Chamber-hosted events
+                            and expos.</li>
+                        <li><strong>Advertising Opportunities</strong>: One free ad in the Chamber’s newsletter and
+                            website per year.</li>
+                        <li><strong>Exclusive Invitations</strong>: Invitations to Silver and above networking events,
+                            including leadership roundtables.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="silver-modal-close">Close</button>
+                </div>
+            </dialog>
+
+            <dialog id="gold-modal">
+                <div class="modal-header">Gold Memberhsip</div>
+                <div class="modal-body">
+                    <p>For businesses aiming for maximum visibility and comunity impact, the Gold level offers:</p>
+                    <ul>
+                        <li><strong>Premium Directory Listing</strong>: Top-tier placement in the business directory
+                            with a dedicated landing page.</li>
+                        <li><strong>Leadership Opportunities</strong>: Eligibility to serve on Chamber committees or
+                            advisory boards.</li>
+                        <li><strong>Unlimited Promotion</strong>: Ongoing promotion on the Chamber’s website, social
+                            media, and newsletters.</li>
+                        <li><strong>Event Sponsorships</strong>: Priority sponsorship opportunities for Chamber events
+                            to showcase your brand.</li>
+                        <li><strong>Complimentary Tickets</strong>: Free tickets to select Chamber-hosted events and
+                            galas.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="gold-modal-close">Close</button>
+                </div>
+            </dialog>
+        </div>
+    </main>
+    <footer class="contact">
+        <p>Contact us: 10 Rue De La Paix, Timbuktu, Mali 999 | Email: info@timbuktucc.org | Phone: (223) 555-2300</p>
+        <nav class="sociallinks">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.svg" alt="youtube">
+            </a>
+            <a href="https://www.linkedin.com/in/vinick-christian-miamo-siedjouwa-04757a1b9/">
+                <img src="images/twitter.svg" alt="twitter">
+            </a>
+            <a href="https://www.linkedin.com/in/vinick-christian-miamo-siedjouwa-04757a1b9/">
+                <img src="images/linkedin.svg" alt="linkedin">
+            </a>
+        </nav>
+
+        <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce /
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+</body>

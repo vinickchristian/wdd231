@@ -165,4 +165,5 @@ function displayForecast(data) {
     forecastNextday.innerHTML = `${nextDayForecast.main.temp_max}&deg;C`;
 }
 
+
 apiFetch();

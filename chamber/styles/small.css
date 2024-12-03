@@ -14,6 +14,7 @@
 
 body {
     font-family: 'Open Sans', 'Montserrat', sans-serif;
+    background-color: var(--neutral-light-color);
 }
 
 header,
